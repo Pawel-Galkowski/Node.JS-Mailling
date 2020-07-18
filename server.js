@@ -1,32 +1,15 @@
 "use strict";
 var express = require("express");
 var path = require("path");
-const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-const passport = require("passport");
 const fileUpload = require("express-fileupload");
-const users = require("./routes/api/users");
 var fs = require("fs");
-require("./middleware/mailer");
 
 var app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(fileUpload());
-
-const db = require("./config/keys");
-
-mongoose
-  .connect(db.mongoURI, db.options)
-  .then(() => console.log("MongoDB Connected"))
-  .catch((err) => console.log(err));
-
-app.use(passport.initialize());
-
-require("./config/passport")(passport);
-
-app.use("/api/users", users);
 
 app.post("/uploads", (req, res) => {
   try {
