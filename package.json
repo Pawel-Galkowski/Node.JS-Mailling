@@ -1,5 +1,5 @@
 {
-  "name": "Node.js-Mailling",
+  "name": "node.js-mailling",
   "main": "server.js",
   "version": "1.0.4",
   "private": true,
@@ -40,7 +40,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rocksdevil/Node.JS-Mailling"
+    "url": "git+https://github.com/rocksdevil/Node.JS-Mailling.git"
   },
   "bugs": {
     "url": "https://github.com/rocksdevil/Node.JS-Mailling/issues"
