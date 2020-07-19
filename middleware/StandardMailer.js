@@ -32,7 +32,7 @@ async function StandardMailer(form) {
               </div>`,
     };
     transporter.sendMail(mailOptions, (error) => {
-      if (error) console.log(error);
+      if (error) return(error);
     });
     return true;
   } catch (err) {

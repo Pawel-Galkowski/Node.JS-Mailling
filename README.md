@@ -27,6 +27,12 @@ After all you need to type in manager
 npm install
 ```
 
+Next, you need to create file ".env" in this file you need to save your gmail informations like:
+```GMAIL information
+GMAIL_USER=[Your email]
+GMAIL_PASS=[Your password]
+```
+
 ## Usage
 To use application you need to type
 
