@@ -1,0 +1,470 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+body {
+  min-width: 100%;
+  min-height: 100%;
+  text-shadow: 1px 2px #eeeeee;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.2rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.7rem;
+  line-height: 2rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+button {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+button:focus {
+  outline: none;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.container {
+  width: 100vw;
+  height: 100%;
+}
+
+.landing {
+  background-image: url("../images/layout.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.landing .paper-background {
+  background-image: url("../images/paper.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.landing nav {
+  max-width: 700px;
+  padding: 2% 5% 2% 4%;
+}
+
+.landing nav ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.landing nav ul button {
+  background: transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 20px;
+  border: 4px solid #f7b32b !important;
+  border-radius: 6px;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.landing nav ul button:hover {
+  color: #f72c25 !important;
+  border-radius: 50px;
+  border-color: #f72c25 !important;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.landing article {
+  padding: 2% 5% 2% 4%;
+  max-width: 700px;
+  text-align: center;
+}
+
+.landing article h1 {
+  margin: 1rem 0;
+}
+
+@media screen and (max-width: 475px) {
+  .landing article {
+    max-width: 100%;
+  }
+  .landing ul li button {
+    width: 70%;
+  }
+  p {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 476px) {
+  .landing ul li button {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .landing nav {
+    width: 100%;
+  }
+  .landing nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .landing nav ul li {
+    margin: 0.5rem 0;
+    width: 100%;
+    text-align: center;
+  }
+  .double-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .double-box .inline-box {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .landing nav {
+    min-width: 500px;
+  }
+  .double-box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .double-box .inline-box {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .paper-background {
+    height: 80vh;
+    width: 90vw;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .double-box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .double-box .inline-box {
+    width: 45%;
+  }
+  .paper-background {
+    height: 70vh;
+    width: 60vw;
+  }
+}
+
+.fullSide {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fullSide .main-container {
+  width: 70%;
+  max-width: 900px;
+  margin: 0 auto;
+  border: 2px solid #2d1e2f;
+  -webkit-box-shadow: 11px 9px 15px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 11px 9px 15px 0px rgba(0, 0, 0, 0.75);
+  padding: 1rem 2rem;
+}
+
+.fullSide .main-container button {
+  max-width: 250px;
+  background: #eeeeee;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 20px;
+  border: 4px solid #f7b32b !important;
+  border-radius: 6px;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.fullSide .main-container button:hover {
+  color: #f72c25 !important;
+  border-radius: 50px;
+  border-color: #f72c25 !important;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.fullSide .formTemplate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fullSide .formTemplate .double-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fullSide .formTemplate .double-box .inline-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.fullSide .formTemplate article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2% 5%;
+  width: 100%;
+  max-width: 800px;
+}
+
+.fullSide .formTemplate article .headerText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 1%;
+  text-align: center;
+}
+
+.fullSide .formTemplate article .headerText p {
+  margin: 1rem 0;
+}
+
+.fullSide .formTemplate article .headerText p strong {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.2em;
+  margin: 0 0 1rem 0;
+}
+
+.fullSide .formTemplate article h3 {
+  margin: 2rem 0 0;
+}
+
+.fullSide .formTemplate article .mainForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.fullSide .formTemplate article .mainForm label {
+  margin: 1rem 0 0.2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: left;
+  padding: 0 0.7rem;
+}
+
+.fullSide .formTemplate article .mainForm input,
+.fullSide .formTemplate article .mainForm textarea {
+  margin: 0 0 1rem 0;
+  padding: 0.5rem 0.7rem;
+  font-size: 1.1rem;
+  border: 1px solid #2d1e2f !important;
+}
+
+.fullSide .formTemplate article .mainForm input[type="submit"],
+.fullSide .formTemplate article .mainForm textarea[type="submit"] {
+  margin: 3rem auto;
+  width: 70%;
+  max-width: 300px;
+  background: #eeeeee;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 20px;
+  border: 4px solid #2d1e2f !important;
+  border-radius: 6px;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  font-weight: bold;
+}
+
+.fullSide .formTemplate article .mainForm input[type="submit"]:hover,
+.fullSide .formTemplate article .mainForm textarea[type="submit"]:hover {
+  color: #f72c25 !important;
+  border-radius: 50px;
+  border-color: #f72c25 !important;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    -webkit-animation: App-logo-spin infinite 20s linear;
+            animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@-webkit-keyframes App-logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=App.css.map */
