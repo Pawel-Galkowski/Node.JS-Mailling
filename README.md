@@ -28,7 +28,7 @@ npm install
 ```
 
 Next, you need to create file ".env" in this file you need to save your gmail informations like:
-```GMAIL information
+```GMAIL
 GMAIL_USER=[Your email]
 GMAIL_PASS=[Your password]
 ```
