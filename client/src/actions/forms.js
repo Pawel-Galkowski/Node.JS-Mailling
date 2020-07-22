@@ -19,7 +19,7 @@ export const customMailer = (formData) => async (dispatch) => {
       payload: res.data,
     });
 
-    dispatch(setAlert("Company Created", "success"));
+    dispatch(setAlert("Message send", "success"));
   } catch (err) {
     dispatch({
       type: FORM_ERROR,
@@ -42,7 +42,7 @@ export const standardMailer = (formData) => async (dispatch) => {
       payload: res.data,
     });
 
-    dispatch(setAlert("Company Created", "success"));
+    dispatch(setAlert("Message send", "success"));
   } catch (err) {
     dispatch({
       type: FORM_ERROR,

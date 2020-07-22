@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { customMailer } from "../../actions/forms";
 import { connect } from "react-redux";
+import Alert from "../layout/Alert";
 
 const CustomMail = ({ customMailer }) => {
   const [formData, setFormData] = useState({});
@@ -34,7 +35,9 @@ const CustomMail = ({ customMailer }) => {
       <div className="main-container">
         <nav>
           <Link to="/home">
-            <button><i className="fas fa-arrow-circle-left"></i> Back</button>
+            <button>
+              <i className="fas fa-arrow-circle-left"></i> Back
+            </button>
           </Link>
         </nav>
         <section className="formTemplate">
@@ -42,9 +45,13 @@ const CustomMail = ({ customMailer }) => {
             <div className="headerText">
               <h1>Custom form</h1>
               <p>Send the message via your gmail account</p>
-              <p><strong>Your data will not be saved!</strong> <br/>This is only form which using input elements to create message and is not saving any data.</p>
+              <p>
+                <strong>Your data will not be saved!</strong> <br />
+                This is only form which using input elements to create message
+                and is not saving any data.
+              </p>
             </div>
-
+            <Alert />
             <form className="mainForm" onSubmit={formSubmit}>
               <h3>Gmail login section</h3>
               <div className="double-box">
