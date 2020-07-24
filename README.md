@@ -1,7 +1,9 @@
-﻿# Node.Js Mailling
+# Node.Js Mailling
 
 Application which are showing how you can use mailling in node.js.
 Front-end of appliacation is created in react-redux.
+
+<b>In next version you will can choose your own inputs.</b>
 
 ## Test application
 
