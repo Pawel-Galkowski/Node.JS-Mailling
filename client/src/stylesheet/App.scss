@@ -49,6 +49,43 @@ button {
   height: 100%;
 }
 
+.alert {
+  padding: 0.8rem 2rem;
+  border: 1px solid transparent;
+  position: fixed;
+  font-size: 1.1rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+
+  &.alert-success {
+    background-color: #dff0d8;
+    border-color: #d0e9c6;
+    color: #3c763d;
+  }
+  &.alert-info {
+    background-color: #d9edf7;
+    border-color: #bcdff1;
+    color: #31708f;
+  }
+  &.alert-warning {
+    background-color: #fcf8e3;
+    border-color: #faf2cc;
+    color: #8a6d3b;
+  }
+  &.alert-error {
+    background-color: #f35b5b;
+    border-color: #f35b5b;
+    color: #920200;
+  }
+  &.alert-danger {
+    background-color: #f2dede;
+    border-color: #ebcccc;
+    color: #a94442;
+  }
+}
+
 .landing {
   background-image: url("../images/layout.jpg");
   background-repeat: no-repeat;

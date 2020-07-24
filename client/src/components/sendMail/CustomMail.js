@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { customMailer } from "../../actions/forms";
 import { connect } from "react-redux";
-import Alert from "../layout/Alert";
 
 const CustomMail = ({ customMailer }) => {
   const [formData, setFormData] = useState({});
@@ -28,6 +27,10 @@ const CustomMail = ({ customMailer }) => {
       },
     };
     customMailer(objectData);
+    setFormData({});
+    setTimeout(() => {
+      window.location.reload();
+    }, 3000);
   };
 
   return (
@@ -51,7 +54,6 @@ const CustomMail = ({ customMailer }) => {
                 and is not saving any data.
               </p>
             </div>
-            <Alert />
             <form className="mainForm" onSubmit={formSubmit}>
               <h3>Gmail login section</h3>
               <div className="double-box">

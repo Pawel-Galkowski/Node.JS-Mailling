@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { standardMailer } from "../../actions/forms";
 import { connect } from "react-redux";
-import Alert from "../layout/Alert";
 
 const StandardMail = ({ standardMailer }) => {
   const [formData, setFormData] = useState({});
@@ -15,6 +14,10 @@ const StandardMail = ({ standardMailer }) => {
   const formSubmit = (e) => {
     e.preventDefault();
     standardMailer(formData);
+    setFormData({});
+    setTimeout(() => {
+      window.location.reload();
+    }, 3000);
   };
 
   return (
@@ -33,7 +36,6 @@ const StandardMail = ({ standardMailer }) => {
               <h1>Standard form</h1>
               <p>Basic of standard form for website</p>
             </div>
-            <Alert />
             <form className="mainForm" onSubmit={formSubmit}>
               <label>E-mail Adress</label>
               <input
