@@ -3,6 +3,10 @@
 Application which are showing how you can use mailling in node.js.
 Front-end of appliacation is created in react-redux.
 
+## View
+This is free hosting so it needs time to load applications.
+Live view is available at [this link](https://node-mailling.herokuapp.com/).
+
 ## Test application
 
 You can test application with standard form.
