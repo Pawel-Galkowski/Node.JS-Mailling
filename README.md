@@ -1,7 +1,7 @@
-# Node.Js Mailling
+# Node.Js Mailing
 
-Application which are showing how you can use mailling in node.js.
-Front-end of appliacation is created in react-redux.
+Application which are showing how you can use mailing in node.js.
+Front-end of application is created in react-redux.
 
 ## View
 This is free hosting so it needs time to load applications.
@@ -23,7 +23,7 @@ If you don't have the email -> check SPAM folder.
     - SASS
 
 ## Installation
-To install appliaction you need to have a NPM(Node Package Manager). You can read about it on main NPM website.
+To install application you need to have a NPM(Node Package Manager). You can read about it on main NPM website.
 
 After all you need to type in manager
 
@@ -31,7 +31,7 @@ After all you need to type in manager
 npm install
 ```
 
-Next, you need to create file ".env" in this file you need to save your gmail informations like:
+Next, you need to create file ".env" in this file you need to save your email information's like:
 ```GMAIL
 GMAIL_USER=[Your email]
 GMAIL_PASS=[Your password]

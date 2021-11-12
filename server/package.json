@@ -1,0 +1,31 @@
+{
+  "scripts": {
+    "start": "node server",
+    "client": "npm start --prefix client",
+    "reinstall": "rm -rf node_modules/ && rm -rf package-lock.json && npm install",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "chokidar": "^3.4.0",
+    "config": "^3.3.1",
+    "core-js": "^3.6.5",
+    "core-util-is": "^1.0.2",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "mime": "^2.4.6",
+    "nodemailer": "^6.4.8",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "request": "^2.88.0",
+    "serve-favicon": "^2.5.0",
+    "validator": "^13.0.0",
+    "yargs": "^15.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
