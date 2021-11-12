@@ -1,9 +1,8 @@
 {
+  "main": "server.js",
   "scripts": {
     "start": "node server",
-    "client": "npm start --prefix client",
-    "reinstall": "rm -rf node_modules/ && rm -rf package-lock.json && npm install",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "reinstall": "rm -rf node_modules/ && rm -rf package-lock.json && npm install"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

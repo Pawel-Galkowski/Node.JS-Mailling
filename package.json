@@ -1,12 +1,11 @@
 {
   "name": "node.js-mailing",
-  "main": "server.js",
   "version": "1.0.4",
   "description": "Mailing app created by ITGalkowski",
   "author": "Pawel Galkowski",
   "license": "MIT",
   "scripts": {
-    "server": "npm start --prefix server",
+    "server": " npm start --prefix server",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "reinstall": "rm -rf node_modules/ && rm -rf package-lock.json && npm install",
