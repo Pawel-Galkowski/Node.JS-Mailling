@@ -7,19 +7,16 @@
   "scripts": {
     "server": " npm start --prefix server",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "dev": "npm run server && npm run client\"",
     "reinstall": "rm -rf node_modules/ && rm -rf package-lock.json && npm install",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
-  "dependencies": {
-    "concurrently": "^5.2.0"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rocksdevil/Node.JS-Mailling.git"
+    "url": "git+https://github.com/pawel-galkowski/Node.JS-Mailling.git"
   },
   "bugs": {
-    "url": "https://github.com/rocksdevil/Node.JS-Mailling/issues"
+    "url": "https://github.com/pawel-galkowski/Node.JS-Mailling/issues"
   },
-  "homepage": "https://github.com/rocksdevil/Node.JS-Mailling#readme"
+  "homepage": "https://github.com/pawel-galkowski/Node.JS-Mailling#readme"
 }

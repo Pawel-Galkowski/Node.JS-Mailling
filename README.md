@@ -45,4 +45,4 @@ npm start
 ```
 
 ## License
-[ISC](https://choosealicense.com/licenses/isc/)
+[MIT](https://choosealicense.com/licenses/mit/)
